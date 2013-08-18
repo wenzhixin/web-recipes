@@ -4,105 +4,105 @@
     <meta charset="utf-8" />
     <title>2号秘方：使用 CSS 设计评论</title>
     <style>
-      .default, .bubble, .bubble-top {
-          float: left;
-          margin: 20px;
-      }
-      .default blockquote {
-          width: 225px;
-          padding: 5px;
-          z-index: 10;
-          position: relative;
-      }
-      .default blockquote p {
-          font-size: 2.4em;
-          margin: 5px;
-          z-index: 10;
-          position: relative; 
-      }
-      .default blockquote + cite {
-          font-size: 1.2em;
-          color: #aaa;
-          text-align: right;
-          display: block;
-          width: 225px;
-          padding: 0 50px;
-          z-index: 10;
-          position: relative;
-      }
-      .default blockquote:before {
-          content: open-quote;
-          position: absolute;
-          z-index: 1;
-          top: -30px;
-          left: -50px;
-          font-size: 12em;
-          color: #faa;
-          font-family: serif;
-      }
-      .default blockquote:after {
-          content: close-quote;
-          position: absolute;
-          z-index: 1;
-          bottom: -1em;
-          left: 175px;
-          font-size: 12em;
-          color: #faa;
-          font-family: serif;
-      }
-      .default blockquote + cite:before {
-          content: "-- ";
-      }
-      
-      .bubble blockquote {
-          width: 225px;
-          padding: 15px 30px;
-          margin: 0;
-          position: relative;
-          background: #faa;
-          background: -webkit-gradient(linear, 0 0, 20% 100%, from(#c40606), to(#faa));
-          border-radius: 20px;
-      }
-      .bubble blockquote p, .bubble-top blockquote p {
-          font-size: 1.8em;
-          margin: 5px;
-          z-index: 10;
-          position: relative;
-      }
-      .bubble blockquote + cite, .bubble-top cite {
-          font-size: 1.1em;
-          display: block;
-          margin: 1em 0 0 4em;
-      }
-      .bubble blockquote:after {
-          content: "";
-          position: absolute;
-          z-index: 1;
-          bottom: -50px;
-          left: 40px;
-          border-width: 0 15px 50px 0;
-          border-style: solid;
-          border-color: transparent #faa;
-      }
-      .bubble-top blockquote {
-          width: 225px;
-          padding: 15px 30px;
-          margin: 0;
-          position: relative;
-          background: #faa;
-          background: -webkit-gradient(linear, 0 0, 20% 100%, from(#faa), to(#c40606));
-          border-radius: 20px;
-      }
-      .bubble-top blockquote:before {
-          content: "";
-          position: absolute;
-          z-index: 1;
-          top: -50px;
-          left: 40px;
-          border-width: 50px 15px 0 0;
-          border-style: solid;
-          border-color: transparent #faa;
-      }
+		.default, .bubble, .bubble-top {
+			float: left;
+			margin: 20px;
+		}
+		.default blockquote {
+			width: 225px;
+			padding: 5px;
+			z-index: 10;
+			position: relative;
+		}
+		.default blockquote p {
+			font-size: 2.4em;
+			margin: 5px;
+			z-index: 10;
+			position: relative;
+		}
+		.default blockquote + cite {
+			font-size: 1.2em;
+			color: #aaa;
+			text-align: right;
+			display: block;
+			width: 225px;
+			padding: 0 50px;
+			z-index: 10;
+			position: relative;
+		}
+		.default blockquote:before {
+			content: open-quote;
+			position: absolute;
+			z-index: 1;
+			top: -30px;
+			left: -50px;
+			font-size: 12em;
+			color: #faa;
+			font-family: serif;
+		}
+		.default blockquote:after {
+			content: close-quote;
+			position: absolute;
+			z-index: 1;
+			bottom: -1em;
+			left: 175px;
+			font-size: 12em;
+			color: #faa;
+			font-family: serif;
+		}
+		.default blockquote + cite:before {
+			content: "-- ";
+		}
+
+		.bubble blockquote {
+			width: 225px;
+			padding: 15px 30px;
+			margin: 0;
+			position: relative;
+			background: #faa;
+			background: -webkit-gradient(linear, 0 0, 20% 100%, from(#c40606), to(#faa));
+			border-radius: 20px;
+		}
+		.bubble blockquote p, .bubble-top blockquote p {
+			font-size: 1.8em;
+			margin: 5px;
+			z-index: 10;
+			position: relative;
+		}
+		.bubble blockquote + cite, .bubble-top cite {
+			font-size: 1.1em;
+			display: block;
+			margin: 1em 0 0 4em;
+		}
+		.bubble blockquote:after {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			bottom: -50px;
+			left: 40px;
+			border-width: 0 15px 50px 0;
+			border-style: solid;
+			border-color: transparent #faa;
+		}
+		.bubble-top blockquote {
+			width: 225px;
+			padding: 15px 30px;
+			margin: 0;
+			position: relative;
+			background: #faa;
+			background: -webkit-gradient(linear, 0 0, 20% 100%, from(#faa), to(#c40606));
+			border-radius: 20px;
+		}
+		.bubble-top blockquote:before {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			top: -50px;
+			left: 40px;
+			border-width: 50px 15px 0 0;
+			border-style: solid;
+			border-color: transparent #faa;
+		}
     </style>
   </head>
   <body>
