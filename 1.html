@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Recipe 1</title>
+    <style>
+		.button {
+  			font-weight: bold;
+  			background-color: #a69520;
+  			text-transform: uppercase;
+  			border: 1px solid #282727;
+  			font-size: 1.2em;
+  			line-height: 1.25em;
+  			padding: 6px 20px;
+  			cursor: pointer;
+  			color: #000;
+  			text-decoration: none;
+  			border-radius: 12px;
+        box-shadow: 1px 3px 5px #555;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff089), to(#a69520));
+		}
+		button.button, input.button {
+		    line-height: 1.22em;
+		}
+		.button:active, .button:focus {
+		    background: -webkit-gradient(linear, 0 0, 100% 0, from(#a69520), to(#fff089));
+		}
+		.button[disabled] {
+  		  pointer-events: none;
+  		  background-color: #E6E6E6;
+        background-image: none;
+  		  box-shadow: none;
+        opacity: 0.65;
+		}
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <button class="button">a button</button>
+      <input type="button" class="button" value="a button" disabled="disabled" />
+      <a class="button" href="#" disabled="disabled">a link</a>
+    </div>
+  </body>
+</html>
